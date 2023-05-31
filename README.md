@@ -1,4 +1,16 @@
+This example uses an additional fan named "bed" (since in my case it's next to the bed).
+
+Commands:
+BED_FAN_ENABLE - enables bed fan once the part cooling fan starts 
+BED_FAN_DISABLE - disabled bed fan usage
+BED_FAN_STOP - stops bed fan from spiing
+( bed fan is default enabled )
+
+
 ```
+[fan_generic bed]
+pin: aux1:gpio23
+
 [gcode_macro M106]
 variable_usebedfan: 1
 rename_existing: M106.1
